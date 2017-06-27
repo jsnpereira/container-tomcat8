@@ -1,10 +1,10 @@
 FROM jsnpereira/java8:tag
 MAINTAINER Jeison Pereira	
 
-RUN wget http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz -O /tmp/tomcat.tgz && \
+RUN wget http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-8/v8.0.44/bin/apache-tomcat-8.0.44.tar.gz -O /tmp/tomcat.tgz && \
     tar xzvf /tmp/tomcat.tgz -C /opt && \
-    mv /opt/apache-tomcat-8.5.15 /opt/tomcat/ && \
-    rm /tmp/tomcat.tgz 
+    mv /opt/apache-tomcat-8.0.44 /opt/tomcat/ && \
+    rm /tmp/tomcat.tgz
 
 ENV CATALINA_HOME /opt/tomcat
 ENV PATH $PATH:$CATALINA_HOME/bin
