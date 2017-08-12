@@ -2,7 +2,7 @@
 
 This repository is create an container to run web server.
 
-## the port
+## The port
 the container are export the ports are:
 
 * 8080: default tomcat port
@@ -24,7 +24,7 @@ docker run -d -p 8080:8080 -p 8009:8009 --name=tomcat tomcat8
 ```
 
 ### How to access tomcat server
-You access an URL as "http:localhost:8080" and showing the site tomcat server.
+You access an URL as "http:localhost:8080" or "http:localhost:8080/manager/html"  and showing the site tomcat server.
 
 ### Reference
 * [Git hub](https://github.com/cmoro-deusto/docker-tomcat8)
